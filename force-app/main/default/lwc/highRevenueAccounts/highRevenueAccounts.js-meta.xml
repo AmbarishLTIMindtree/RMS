@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__HomePage</target>
+        <!-- 'lightning__Tab' using this we can create a tab in UI. (Goto 'Tabs' in quick find and create a tab in Lightning Component Tab)-->
+        <target>lightning__Tab</target>
+    </targets>
+</LightningComponentBundle>
