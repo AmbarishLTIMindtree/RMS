@@ -3,7 +3,8 @@ import highRevenueAccounts from '@salesforce/apex/AccountController.highRevenueA
 
 export default class HighRevenueAccountsImperative extends LightningElement {
     listOfAccounts=[];
-
+    // Wire means automatically.
+    // Imperative means manually (needs an user interaction).
     setCount(event){
         let inputValue=event.target.value;
         if(inputValue == ''){
