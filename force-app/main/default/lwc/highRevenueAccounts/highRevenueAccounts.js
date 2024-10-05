@@ -4,8 +4,11 @@ import highRevenueAccounts from '@salesforce/apex/AccountController.highRevenueA
 
 export default class HighRevenueAccounts extends LightningElement {
     listOfAccounts=[];
+    countOfRecords=10;
 
-    @wire(highRevenueAccounts)
+    // for wire we should use '$' for referencing the property.
+    // for imperative call we use {count: this.countOfRecords}
+    @wire(highRevenueAccounts,{count: '$countOfRecords'})
     highRevenueAccountsHandler(response){
         const {data,error}=response;
         if(error){
