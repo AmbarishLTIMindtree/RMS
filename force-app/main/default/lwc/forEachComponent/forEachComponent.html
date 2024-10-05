@@ -1,0 +1,15 @@
+<!-- 'for:item' and 'title' should be same. 'key' might be anything -->
+<!-- Refer Salesforce Hulk videos on LWC -->
+<template>
+    <div class="slds-grid slds-wrap">
+        <template for:each={listOfRecords} for:item="record">
+            <div key={record1} class="slds-col slds-size_4-of-12">
+                <lightning-card  title={record}>
+                    
+                    <p class="slds-p-horizontal_small">Card Body (custom component)</p>
+                    
+                </lightning-card>
+            </div>
+        </template>
+    </div>
+</template>
